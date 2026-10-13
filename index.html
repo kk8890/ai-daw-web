@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI圖生圖繪圖工具</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI 圖生圖繪圖</h1>
+    <div class="row">
+      <div class="card">
+        <h3>上傳參考圖</h3>
+        <input type="file" id="imgUpload" accept="image/*">
+        <div class="preview-box">
+          <img id="inputImg" />
+        </div>
+      </div>
+      <div class="card">
+        <h3>生成結果</h3>
+        <div class="preview-box">
+          <img id="outputImg" />
+        </div>
+      </div>
+    </div>
+    <div class="control">
+      <textarea id="prompt" placeholder="輸入提示詞，例如：漂亮女生，長頭髮，寫實風格"></textarea>
+      <button id="runBtn">開始生成</button>
+      <div id="status">等待模型載入...</div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
